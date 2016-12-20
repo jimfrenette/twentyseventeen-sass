@@ -1,0 +1,8 @@
+@media screen and (min-width: 79em) {
+  .has-sidebar .entry-content blockquote.alignleft {
+    margin-left: -20%;
+  }
+  .blog:not(.has-sidebar) .entry-content blockquote.alignright, .archive:not(.has-sidebar) .entry-content blockquote.alignright, .page-two-column .entry-content blockquote.alignright, .twentyseventeen-front-page .entry-content blockquote.alignright {
+    margin-right: -20%;
+  }
+}

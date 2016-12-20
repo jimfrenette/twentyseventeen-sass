@@ -1,0 +1,93 @@
+@media screen and (min-width: 30em) {
+  /* Typography */
+  body, button, input, select, textarea {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  h2, .page .panel-content .recent-posts .entry-title {
+    font-size: 26px;
+    font-size: 1.625rem;
+  }
+  h3 {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+  h4 {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  h5 {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+  h6 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .entry-content blockquote {
+    &.alignleft, &.alignright {
+      font-size: 14px;
+      font-size: 0.875rem;
+    }
+  }
+  /* Fix image alignment */
+  img {
+    &.alignleft {
+      float: left;
+      margin-right: 1.5em;
+    }
+    &.alignright {
+      float: right;
+      margin-left: 1.5em;
+    }
+  }
+  /* Site Branding */
+  .site-branding {
+    padding: 3em 0;
+  }
+  /* Front Page */
+  .panel-content .wrap {
+    padding-bottom: 2em;
+    padding-top: 3.5em;
+  }
+  .page-one-column .panel-content .wrap {
+    max-width: 740px;
+  }
+  .panel-content {
+    .entry-header {
+      margin-bottom: 4.5em;
+    }
+    .recent-posts .entry-header {
+      margin-bottom: 0;
+    }
+  }
+  /* Blog Index, Archive, Search */
+  .taxonomy-description {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+  .page-numbers.current, .site-footer {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  /* Gallery Columns */
+  .gallery-item {
+    max-width: 25%;
+  }
+  .gallery-columns-1 .gallery-item {
+    max-width: 100%;
+  }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%;
+  }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+  }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%;
+  }
+}

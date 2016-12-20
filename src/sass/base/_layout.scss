@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+13.0 Layout
+--------------------------------------------------------------*/
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  &:before, &:after {
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+}
+
+body {
+  background: $white1;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+#page {
+  position: relative;
+  word-wrap: break-word;
+}
+
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  padding-left: 2em;
+  padding-right: 2em;
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}

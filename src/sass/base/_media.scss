@@ -1,0 +1,196 @@
+/*--------------------------------------------------------------
+16.0 Media
+--------------------------------------------------------------*/
+
+img, video {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+img {
+  &.alignleft, &.alignright {
+    float: none;
+    margin: 0;
+  }
+}
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+
+embed, iframe, object {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption,
+.gallery-caption {
+  color: $gray3;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption {
+  img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wp-caption-text {
+    margin: 0.8075em 0;
+  }
+}
+
+/* Media Elements */
+
+.mejs-container {
+  margin-bottom: 1.5em;
+}
+
+/* Audio Player */
+
+.mejs-controls a.mejs-horizontal-volume-slider {
+  background: transparent;
+  border: 0;
+  &:focus, &:hover {
+    background: transparent;
+    border: 0;
+  }
+}
+
+/* Playlist Color Overrides: Light */
+
+.site-content {
+  .wp-playlist-light {
+    border-color: $silver2;
+    color: $black2;
+    .wp-playlist-current-item {
+      .wp-playlist-item-album {
+        color: $black3;
+      }
+      .wp-playlist-item-artist {
+        color: $gray1;
+      }
+    }
+    .wp-playlist-item {
+      border-bottom: 1px dotted $silver2;
+      -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+      transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+      &:hover, &:focus {
+        border-bottom-color: rgba(0, 0, 0, 0);
+        background-color: $gray1;
+        color: $white1;
+      }
+    }
+    a.wp-playlist-caption:hover {
+      color: $white1;
+    }
+    .wp-playlist-item {
+      &:hover a, &:focus a {
+        color: $white1;
+      }
+    }
+  }
+  .wp-playlist-dark {
+    background: $black2;
+    border-color: $black3;
+    .mejs-container .mejs-controls {
+      background-color: $black3;
+    }
+    .wp-playlist-caption {
+      color: $white1;
+    }
+    .wp-playlist-current-item {
+      .wp-playlist-item-album {
+        color: $silver2;
+      }
+      .wp-playlist-item-artist {
+        color: $gray4;
+      }
+    }
+    .wp-playlist-playing {
+      background-color: $black3;
+    }
+    .wp-playlist-item {
+      border-bottom: 1px dotted $gray5;
+      -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+      transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+      &:hover, &:focus {
+        border-bottom-color: rgba(0, 0, 0, 0);
+        background-color: $gray4;
+        color: $black2;
+      }
+    }
+    a.wp-playlist-caption:hover {
+      color: $black2;
+    }
+    .wp-playlist-item {
+      &:hover a, &:focus a {
+        color: $black2;
+      }
+    }
+  }
+  .wp-playlist {
+    padding: 0.625em 0.625em 0.3125em;
+  }
+  .wp-playlist-current-item {
+    .wp-playlist-item-title {
+      font-weight: 700;
+    }
+    .wp-playlist-item-album {
+      font-style: normal;
+    }
+    .wp-playlist-item-artist {
+      font-size: 10px;
+      font-size: 0.625rem;
+      font-weight: 800;
+      letter-spacing: 0.1818em;
+      text-transform: uppercase;
+    }
+  }
+  .wp-playlist-item {
+    padding: 0 0.3125em;
+    cursor: pointer;
+    &:last-of-type {
+      border-bottom: none;
+    }
+    a {
+      padding: 0.3125em 0;
+      border-bottom: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: transparent;
+      &:focus, &:hover {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: transparent;
+      }
+    }
+  }
+  .wp-playlist-item-length {
+    top: 5px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  position: relative;
+  /* Align more nicely with capital letters */
+  top: -0.0625em;
+  vertical-align: middle;
+  width: 1em;
+}

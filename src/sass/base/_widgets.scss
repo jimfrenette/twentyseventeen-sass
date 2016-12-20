@@ -1,0 +1,276 @@
+/*--------------------------------------------------------------
+15.0 Widgets
+--------------------------------------------------------------*/
+
+#secondary {
+  padding: 1em 0 2em;
+}
+
+.widget {
+  padding-bottom: 3em;
+}
+
+h2.widget-title {
+  color: $black2;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.1818em;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+
+.widget-title a {
+  color: inherit;
+}
+
+/* widget forms */
+
+.widget {
+  select {
+    width: 100%;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    li {
+      border-bottom: 1px solid $silver3;
+      border-top: 1px solid $silver3;
+      padding: 0.5em 0;
+      + li {
+        margin-top: -1px;
+      }
+      ul {
+        margin: 0 0 -1px;
+        padding: 0;
+        position: relative;
+      }
+      li {
+        border: 0;
+        padding-left: 24px;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+}
+
+.widget_top-posts ul li ul,
+.widget_rss_links ul li ul,
+.widget-grofile ul.grofile-links li ul,
+.widget_pages ul li ul,
+.widget_meta ul li ul {
+  bottom: 0;
+}
+
+.widget_nav_menu ul li li {
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+}
+
+.widget_top-posts ul li,
+.widget_rss_links ul li,
+.widget-grofile ul.grofile-links li {
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  li {
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+  }
+}
+
+.widget_rss ul li {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+/* widget markup */
+
+.widget {
+  .post-date, .rss-date {
+    font-size: 0.81em;
+  }
+}
+
+/* Text widget */
+
+.widget_text {
+  word-wrap: break-word;
+}
+
+/* RSS Widget */
+
+.widget_rss {
+  .widget-title .rsswidget:first-child {
+    float: right;
+    &:hover {
+      background-color: transparent;
+    }
+    img {
+      display: block;
+    }
+  }
+  ul li {
+    padding: 2.125em 0;
+    &:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+  li .rsswidget {
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  .rss-date, li cite {
+    color: $gray1;
+    display: block;
+    font-size: 10px;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  .rss-date {
+    margin: 0.5em 0 1.5em;
+    padding: 0;
+  }
+  .rssSummary {
+    margin-bottom: 0.5em;
+  }
+}
+
+/* Contact Info Widget */
+
+.widget_contact_info .contact-map {
+  margin-bottom: 0.5em;
+}
+
+/* Gravatar */
+
+.widget-grofile h4 {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* Recent Comments */
+
+.widget_recent_comments {
+  table, th, td {
+    border: 0;
+  }
+}
+
+/* Recent Posts widget */
+
+.widget_recent_entries .post-date {
+  display: block;
+}
+
+/* Search */
+
+.search-form {
+  position: relative;
+  .search-submit {
+    bottom: 3px;
+    padding: 0.5em 1em;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    .icon {
+      height: 24px;
+      top: -2px;
+      width: 24px;
+    }
+  }
+}
+
+/* Tag cloud widget */
+
+.tagcloud,
+.widget_tag_cloud,
+.wp_widget_tag_cloud {
+  line-height: 1.5;
+}
+
+.widget {
+  .tagcloud a, &.widget_tag_cloud a {
+    border: 1px solid $silver3;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: inline-block;
+    float: left;
+    font-size: 14px !important;
+    /* !important to overwrite inline styles */
+    font-size: 0.875rem !important;
+    margin: 4px 4px 0 0 !important;
+    padding: 4px 10px 5px !important;
+    position: relative;
+    -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+    width: auto;
+    word-wrap: break-word;
+    z-index: 0;
+  }
+}
+
+.wp_widget_tag_cloud a {
+  border: 1px solid $silver3;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  float: left;
+  font-size: 14px !important;
+  /* !important to overwrite inline styles */
+  font-size: 0.875rem !important;
+  margin: 4px 4px 0 0 !important;
+  padding: 4px 10px 5px !important;
+  position: relative;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+  width: auto;
+  word-wrap: break-word;
+  z-index: 0;
+}
+
+.widget {
+  .tagcloud a {
+    &:hover, &:focus {
+      border-color: $gray2;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-decoration: none;
+    }
+  }
+  &.widget_tag_cloud a {
+    &:hover, &:focus {
+      border-color: $gray2;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.wp_widget_tag_cloud a {
+  &:hover, &:focus {
+    border-color: $gray2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+/* Calendar widget */
+
+.widget_calendar {
+  th, td {
+    text-align: center;
+  }
+  tfoot td {
+    border: 0;
+  }
+}

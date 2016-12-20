@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------
+20.0 Print
+--------------------------------------------------------------*/
+
+@media print {
+  /* Hide elements */
+  form,
+  button,
+  input,
+  select,
+  textarea,
+  .navigation-top,
+  .social-navigation,
+  #secondary,
+  .content-bottom-widgets,
+  .header-image,
+  .panel-image-prop,
+  .icon-thumb-tack,
+  .page-links,
+  .edit-link,
+  .post-navigation,
+  .pagination.navigation,
+  .comments-pagination,
+  .comment-respond,
+  .comment-edit-link,
+  .comment-reply-link,
+  .comment-metadata .edit-link,
+  .pingback .edit-link,
+  .site-footer aside.widget-area,
+  .site-info {
+    display: none !important;
+  }
+  .entry-footer,
+  #comments,
+  .site-footer,
+  .single-featured-image-header {
+    border: 0;
+  }
+  /* Font sizes */
+  body {
+    font-size: 12pt;
+  }
+  h1 {
+    font-size: 24pt;
+  }
+  h2 {
+    font-size: 22pt;
+  }
+  h3 {
+    font-size: 17pt;
+  }
+  h4 {
+    font-size: 12pt;
+  }
+  h5 {
+    font-size: 11pt;
+  }
+  h6 {
+    font-size: 12pt;
+  }
+  .page .panel-content .entry-title,
+  .page-title,
+  body.page:not(.twentyseventeen-front-page) .entry-title {
+    font-size: 10pt;
+  }
+  /* Layout */
+  .wrap {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    max-width: none;
+  }
+  /* Site Branding */
+  .site-header {
+    background: transparent;
+    padding: 0;
+  }
+  .custom-header-media {
+    padding: 0;
+  }
+  .twentyseventeen-front-page {
+    &.has-header-image .site-branding,
+    &.has-header-video .site-branding {
+      position: relative;
+    }
+  }
+  .home.blog {
+    &.has-header-image .site-branding,
+    &.has-header-video .site-branding {
+      position: relative;
+    }
+  }
+  .site-branding {
+    margin-top: 0;
+    margin-bottom: 1.75em !important;
+    /* override styles added by JavaScript */
+  }
+  .site-title {
+    font-size: 25pt;
+  }
+  .site-description {
+    font-size: 12pt;
+    opacity: 1;
+  }
+  /* Posts */
+  .single-featured-image-header {
+    background: transparent;
+  }
+  .entry-meta {
+    font-size: 9pt;
+  }
+  /* Colors */
+  body, .site {
+    background: none !important;
+    /* Brute force since user agents all print differently. */
+  }
+  body, a, .site-title a {
+    color: $black2 !important;
+    /* Make sure color schemes don't affect to print */
+  }
+  .twentyseventeen-front-page {
+    &.has-header-image .site-title,
+    &.has-header-video .site-title,
+    &.has-header-image .site-title a,
+    &.has-header-video .site-title a {
+      color: $black2 !important;
+      /* Make sure color schemes don't affect to print */
+    }
+  }
+  h2, h5, blockquote,
+  .site-description {
+    color: $gray6 !important;
+    /* Make sure color schemes don't affect to print */
+  }
+  .twentyseventeen-front-page {
+    &.has-header-image .site-description,
+    &.has-header-video .site-description {
+      color: $gray6 !important;
+      /* Make sure color schemes don't affect to print */
+    }
+  }
+  .entry-meta {
+    color: $gray6 !important;
+    /* Make sure color schemes don't affect to print */
+    a {
+      color: $gray6 !important;
+      /* Make sure color schemes don't affect to print */
+    }
+  }
+  .entry-content blockquote {
+    &.alignleft, &.alignright {
+      font-size: 11pt;
+      width: 34%;
+    }
+  }
+  .site-footer {
+    padding: 0;
+  }
+}

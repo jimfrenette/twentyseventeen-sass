@@ -1,0 +1,16 @@
+{
+  "name": "Twenty-Seventeen-Sass",
+  "version": "1.0.0",
+  "description": "WordPress Twenty Seventeen Theme Sass Compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Frenette",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.0.0"
+  }
+}

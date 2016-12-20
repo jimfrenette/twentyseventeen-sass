@@ -1,0 +1,39 @@
+@media screen and (min-width: 67em) {
+  /* Navigation */
+  .navigation-top {
+    .wrap {
+      padding: 0.75em 2em;
+    }
+    nav {
+      margin-left: 0;
+    }
+  }
+  /* Sticky posts */
+  .sticky .icon-thumb-tack {
+    font-size: 32px;
+    font-size: 2rem;
+    height: 22px;
+    left: -1.25em;
+    top: 0.75em;
+    width: 32px;
+  }
+  /* Pagination */
+  .page-numbers {
+    display: inline-block;
+    &.current {
+      font-size: 15px;
+      font-size: 0.9375rem;
+      .screen-reader-text {
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute !important;
+        width: 1px;
+      }
+    }
+  }
+  /* Comments */
+  .comment-body {
+    margin-left: 0;
+  }
+}

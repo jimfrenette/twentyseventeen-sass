@@ -1,0 +1,349 @@
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
+
+a {
+  color: $black2;
+  text-decoration: none;
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover, &:active {
+    color: $black1;
+    outline: 0;
+  }
+}
+
+/* Hover effects */
+
+.entry-content a,
+.entry-summary a,
+.widget a,
+.site-footer .widget-area a,
+.posts-navigation a,
+.widget_authors a strong {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
+  box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
+  -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+}
+
+.entry-title a,
+.entry-meta a {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  text-decoration: none;
+  -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+}
+
+.page-links a {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  text-decoration: none;
+  -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+  .page-number {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+    text-decoration: none;
+    -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+  }
+}
+
+.entry-footer {
+  a, .cat-links a, .tags-links a {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+    text-decoration: none;
+    -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+  }
+}
+
+.edit-link a,
+.post-navigation a,
+.logged-in-as a,
+.comment-navigation a {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  text-decoration: none;
+  -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+}
+
+.comment-metadata a {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  text-decoration: none;
+  -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+  &.comment-edit-link {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+    text-decoration: none;
+    -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+  }
+}
+
+.comment-reply-link,
+a .nav-title,
+.pagination a,
+.comments-pagination a,
+.site-info a {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  text-decoration: none;
+  -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+}
+
+.widget {
+  .widget-title a, ul li a {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+    text-decoration: none;
+    -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+    transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+  }
+}
+
+.site-footer .widget-area ul li a {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+  text-decoration: none;
+  -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+}
+
+.entry-content a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.entry-summary a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.widget a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.site-footer .widget-area a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.posts-navigation a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.comment-metadata a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+  &.comment-edit-link {
+    &:focus, &:hover {
+      color: $black1;
+      -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.comment-reply-link {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.widget_authors a {
+  &:focus strong, &:hover strong {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.entry-title a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.entry-meta a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.page-links a {
+  &:focus .page-number,
+  &:hover .page-number {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.entry-footer {
+  a {
+    &:focus, &:hover {
+      color: $black1;
+      -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    }
+  }
+  .cat-links a {
+    &:focus, &:hover {
+      color: $black1;
+      -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    }
+  }
+  .tags-links a {
+    &:focus, &:hover {
+      color: $black1;
+      -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.post-navigation a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.pagination a:not(.prev):not(.next) {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.comments-pagination a:not(.prev):not(.next) {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.logged-in-as a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+a {
+  &:focus .nav-title,
+  &:hover .nav-title {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.edit-link a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.site-info a {
+  &:focus, &:hover {
+    color: $black1;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.widget {
+  .widget-title a {
+    &:focus, &:hover {
+      color: $black1;
+      -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    }
+  }
+  ul li a {
+    &:focus, &:hover {
+      color: $black1;
+      -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+/* Fixes linked images */
+
+.entry-content a img,
+.widget a img {
+  -webkit-box-shadow: 0 0 0 8px $white1;
+  box-shadow: 0 0 0 8px $white1;
+}
+
+.post-navigation a {
+  &:focus .icon, &:hover .icon {
+    color: $black2;
+  }
+}

@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+4.0 Clearings
+--------------------------------------------------------------*/
+
+.clear {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.entry-content {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.entry-footer {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.comment-content {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.site-header {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.site-content {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.site-footer {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.nav-links {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.pagination {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.comment-author {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.widget-area {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.widget {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.comment-meta {
+  &:before, &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.clear:after,
+.entry-content:after,
+.entry-footer:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after,
+.nav-links:after,
+.pagination:after,
+.comment-author:after,
+.widget-area:after,
+.widget:after,
+.comment-meta:after {
+  clear: both;
+}

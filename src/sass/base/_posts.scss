@@ -1,0 +1,378 @@
+/*--------------------------------------------------------------
+13.4 Posts
+--------------------------------------------------------------*/
+
+/* Post Landing Page */
+
+.sticky {
+  position: relative;
+}
+
+.post:not(.sticky) .icon-thumb-tack {
+  display: none;
+}
+
+.sticky .icon-thumb-tack {
+  display: block;
+  height: 18px;
+  left: -1.5em;
+  position: absolute;
+  top: 1.65em;
+  width: 20px;
+}
+
+.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+  color: $black2;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.entry-header .entry-title {
+  margin-bottom: 0.25em;
+}
+
+.entry-title {
+  a {
+    color: $black3;
+    text-decoration: none;
+    margin-left: -2px;
+  }
+  &:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
+.entry-meta {
+  color: $gray1;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.1818em;
+  padding-bottom: 0.25em;
+  text-transform: uppercase;
+  a {
+    color: $gray1;
+  }
+}
+
+.byline, .updated:not(.published) {
+  display: none;
+}
+
+.single .byline, .group-blog .byline {
+  display: inline;
+}
+
+.pagination, .comments-pagination {
+  border-top: 1px solid $silver2;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  padding: 2em 0 3em;
+  text-align: center;
+}
+
+.pagination .icon {
+  width: 0.666666666em;
+  height: 0.666666666em;
+}
+
+.comments-pagination {
+  .icon {
+    width: 0.666666666em;
+    height: 0.666666666em;
+  }
+  border: 0;
+}
+
+.page-numbers {
+  display: none;
+  padding: 0.5em 0.75em;
+  &.current {
+    color: $gray1;
+    display: inline-block;
+    .screen-reader-text {
+      clip: auto;
+      height: auto;
+      overflow: auto;
+      position: relative !important;
+      width: auto;
+    }
+  }
+}
+
+.prev.page-numbers, .next.page-numbers {
+  background-color: $silver3;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25em 0.5em 0.4em;
+}
+
+.prev.page-numbers, .next.page-numbers {
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+
+.prev.page-numbers {
+  &:focus, &:hover {
+    background-color: $gray1;
+    color: $white1;
+  }
+}
+
+.next.page-numbers {
+  &:focus, &:hover {
+    background-color: $gray1;
+    color: $white1;
+  }
+}
+
+.prev.page-numbers {
+  float: left;
+}
+
+.next.page-numbers {
+  float: right;
+}
+
+/* Aligned blockquotes */
+
+.entry-content blockquote {
+  &.alignleft, &.alignright {
+    color: $gray3;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    width: 48%;
+  }
+}
+
+/* Blog landing, search, archives */
+
+.blog .site-main > article, .archive .site-main > article, .search .site-main > article {
+  padding-bottom: 2em;
+}
+
+body:not(.twentyseventeen-front-page) {
+  .entry-header {
+    padding: 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .entry-content, #comments {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .entry-header {
+    padding-top: 0;
+  }
+}
+
+.blog .entry-meta a.post-edit-link, .archive .entry-meta a.post-edit-link {
+  color: $black2;
+  display: inline-block;
+  margin-left: 1em;
+  white-space: nowrap;
+}
+
+.search {
+  .entry-meta a.post-edit-link {
+    color: $black2;
+    display: inline-block;
+    margin-left: 1em;
+    white-space: nowrap;
+  }
+  .page .entry-meta a.post-edit-link {
+    margin-left: 0;
+    white-space: nowrap;
+  }
+}
+
+.taxonomy-description {
+  color: $gray3;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+/* More tag */
+
+.entry-content .more-link:before {
+  content: "";
+  display: block;
+  margin-top: 1.5em;
+}
+
+/* Single Post */
+
+.single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.twentyseventeen-front-page) #primary {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 740px;
+}
+
+.archive.page-one-column:not(.has-sidebar) {
+  .page-header, #primary {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 740px;
+  }
+}
+
+.single-featured-image-header {
+  background-color: $white2;
+  border-bottom: 1px solid $silver2;
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+.page-links {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  padding: 2em 0 3em;
+  .page-number {
+    color: $gray1;
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
+  a {
+    display: inline-block;
+    .page-number {
+      color: $black2;
+    }
+  }
+}
+
+/* Entry footer */
+
+.entry-footer {
+  border-bottom: 1px solid $silver2;
+  border-top: 1px solid $silver2;
+  margin-top: 2em;
+  padding: 2em 0;
+  .cat-links, .tags-links {
+    display: block;
+    font-size: 11px;
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.1818em;
+    padding-left: 2.5em;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .cat-links {
+    + .tags-links {
+      margin-top: 1em;
+    }
+    a {
+      color: $black3;
+    }
+  }
+  .tags-links a {
+    color: $black3;
+  }
+  .cat-links .icon, .tags-links .icon {
+    color: $gray1;
+    left: 0;
+    margin-right: 0.5em;
+    position: absolute;
+    top: 2px;
+  }
+  .edit-link {
+    display: inline-block;
+    a.post-edit-link {
+      background-color: $black2;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: $white1;
+      display: inline-block;
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 800;
+      margin-top: 2em;
+      padding: 0.7em 2em;
+      -webkit-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+      white-space: nowrap;
+      &:hover, &:focus {
+        background-color: $gray1;
+      }
+    }
+  }
+}
+
+/* Post Formats */
+
+.blog .format-status .entry-title, .archive .format-status .entry-title, .blog .format-aside .entry-title, .archive .format-aside .entry-title {
+  display: none;
+}
+
+.format-quote blockquote {
+  color: $black3;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  overflow: visible;
+  position: relative;
+  .icon {
+    display: block;
+    height: 20px;
+    left: -1.25em;
+    position: absolute;
+    top: 0.4em;
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    width: 20px;
+  }
+}
+
+/* Post Navigation */
+
+.post-navigation {
+  font-weight: 800;
+  margin: 3em 0;
+  .nav-links {
+    padding: 1em 0;
+  }
+}
+
+.nav-subtitle {
+  background: transparent;
+  color: $gray1;
+  display: block;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  letter-spacing: 0.1818em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.nav-title {
+  color: $black3;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+.post-navigation .nav-next {
+  margin-top: 1.5em;
+}
+
+.nav-links {
+  .nav-previous .nav-title .nav-title-icon-wrapper {
+    margin-right: 0.5em;
+  }
+  .nav-next .nav-title .nav-title-icon-wrapper {
+    margin-left: 0.5em;
+  }
+}

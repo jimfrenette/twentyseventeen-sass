@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------
+18.0 SVGs Fallbacks
+--------------------------------------------------------------*/
+
+.svg-fallback {
+  display: none;
+}
+
+.no-svg {
+  .svg-fallback {
+    display: inline-block;
+  }
+  .dropdown-toggle {
+    padding: 0.5em 0 0;
+    right: 0;
+    text-align: center;
+    width: 2em;
+    .svg-fallback.icon-angle-down {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1;
+      -webkit-transform: rotate(180deg);
+      /* Chrome, Safari, Opera */
+      -ms-transform: rotate(180deg);
+      /* IE 9 */
+      transform: rotate(180deg);
+    }
+    &.toggled-on .svg-fallback.icon-angle-down {
+      -webkit-transform: rotate(0);
+      /* Chrome, Safari, Opera */
+      -ms-transform: rotate(0);
+      /* IE 9 */
+      transform: rotate(0);
+    }
+    .svg-fallback.icon-angle-down:before {
+      content: "\005E";
+    }
+  }
+  .social-navigation a {
+    background: transparent;
+    color: $black2;
+    height: auto;
+    width: auto;
+  }
+  .next.page-numbers .screen-reader-text,
+  .prev.page-numbers .screen-reader-text,
+  .social-navigation li a .screen-reader-text,
+  .search-submit .screen-reader-text {
+    clip: auto;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    height: auto;
+    position: relative !important;
+    /* overrides previous !important styles */
+    width: auto;
+  }
+}

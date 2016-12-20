@@ -1,0 +1,351 @@
+/*--------------------------------------------------------------
+5.0 Typography
+--------------------------------------------------------------*/
+
+body, button, input, select, textarea {
+  color: $black3;
+  font-family: $font-family-input;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.66;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  line-height: 1.4;
+  margin: 0 0 0.75em;
+  padding: 1.5em 0 0;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  padding-top: 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h2 {
+  color: $gray3;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+h3 {
+  color: $black3;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+h4 {
+  color: $black3;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+h5 {
+  color: $gray1;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: $black3;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 800;
+}
+
+p {
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+blockquote {
+  color: $gray3;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  cite {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 0.5em;
+  }
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: $silver2;
+  font-family: $font-family-pre;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code, kbd, tt, var {
+  font-family: $font-family-code;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted $gray3;
+  cursor: help;
+}
+
+mark, ins {
+  background: $silver2;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
+blockquote {
+  quotes: "" "";
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote {
+  &:before, &:after {
+    content: "";
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+/* Typography for Arabic Font */
+
+html {
+  &[lang="ar"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang1;
+    }
+  }
+  &[lang="ary"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang1;
+    }
+  }
+  &[lang="azb"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang1;
+    }
+  }
+  &[lang="fa-IR"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang1;
+    }
+  }
+  &[lang="haz"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang1;
+    }
+  }
+  &[lang="ps"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang1;
+    }
+  }
+  &[lang="ur"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang1;
+    }
+  }
+  &[lang="ar"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="ary"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="azb"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="fa-IR"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="haz"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="ps"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="ur"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang^="zh-"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang2;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="bg-BG"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang3;
+    }
+  }
+  &[lang="ru-RU"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang3;
+    }
+  }
+  &[lang="uk"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang3;
+    }
+  }
+  &[lang="bg-BG"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
+  &[lang="ru-RU"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
+  &[lang="uk"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
+  &[lang="bn-BD"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang4;
+    }
+  }
+  &[lang="hi-IN"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang4;
+    }
+  }
+  &[lang="mr-IN"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang4;
+    }
+  }
+  &[lang="bn-BD"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="hi-IN"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="mr-IN"] {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="el"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang5;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      line-height: 1.3;
+    }
+  }
+  &[lang="gu-IN"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang4;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="he-IL"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang6;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="ja"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang7;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+  }
+  &[lang="ko-KR"] {
+    body, button, input, select, textarea {
+      font-family: $font-family-lang8;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+    }
+  }
+  &[lang="th"] {
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.65;
+      font-family: $font-family-lang9;
+    }
+    body, button, input, select, textarea {
+      line-height: 1.8;
+      font-family: $font-family-lang9;
+    }
+  }
+  &[lang="ar"] *, &[lang="ary"] *, &[lang="azb"] *, &[lang="haz"] *, &[lang="ps"] *, &[lang^="zh-"] *, &[lang="bg-BG"] *, &[lang="ru-RU"] *, &[lang="uk"] *, &[lang="bn-BD"] *, &[lang="hi-IN"] *, &[lang="mr-IN"] *, &[lang="el"] *, &[lang="gu-IN"] *, &[lang="he-IL"] *, &[lang="ja"] *, &[lang="ko-KR"] *, &[lang="th"] * {
+    letter-spacing: 0 !important;
+  }
+}

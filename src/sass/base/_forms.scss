@@ -1,0 +1,200 @@
+/*--------------------------------------------------------------
+6.0 Forms
+--------------------------------------------------------------*/
+
+label {
+  color: $black3;
+  display: block;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+input {
+  &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"], &[type="number"], &[type="tel"], &[type="range"], &[type="date"], &[type="month"], &[type="week"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="color"] {
+    color: $gray3;
+    background: $white1;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    border: 1px solid $gray2;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    padding: 0.7em;
+    width: 100%;
+  }
+}
+
+textarea {
+  color: $gray3;
+  background: $white1;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  border: 1px solid $gray2;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  padding: 0.7em;
+  width: 100%;
+}
+
+input {
+  &[type="text"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="password"]:focus, &[type="search"]:focus, &[type="number"]:focus, &[type="tel"]:focus, &[type="range"]:focus, &[type="date"]:focus, &[type="month"]:focus, &[type="week"]:focus, &[type="time"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="color"]:focus {
+    color: $black2;
+    border-color: $black3;
+  }
+}
+
+textarea:focus {
+  color: $black2;
+  border-color: $black3;
+}
+
+select {
+  border: 1px solid $gray2;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 3em;
+  max-width: 100%;
+}
+
+input {
+  &[type="radio"], &[type="checkbox"] {
+    margin-right: 0.5em;
+  }
+  &[type="radio"] + label, &[type="checkbox"] + label {
+    font-weight: 400;
+  }
+}
+
+button {
+  background-color: $black2;
+  border: 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: $white1;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 1em 2em;
+  text-shadow: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+input {
+  &[type="button"], &[type="submit"] {
+    background-color: $black2;
+    border: 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: $white1;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1em 2em;
+    text-shadow: none;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+  }
+  + {
+    button {
+      padding: 0.75em 2em;
+    }
+    input {
+      &[type="button"], &[type="submit"] {
+        padding: 0.75em 2em;
+      }
+    }
+  }
+}
+
+button.secondary {
+  background-color: $silver3;
+  color: $black2;
+}
+
+input {
+  &[type="reset"], &[type="button"].secondary, &[type="reset"].secondary, &[type="submit"].secondary {
+    background-color: $silver3;
+    color: $black2;
+  }
+}
+
+button {
+  &:hover, &:focus {
+    background: $gray1;
+  }
+}
+
+input {
+  &[type="button"] {
+    &:hover, &:focus {
+      background: $gray1;
+    }
+  }
+  &[type="submit"] {
+    &:hover, &:focus {
+      background: $gray1;
+    }
+  }
+}
+
+button.secondary {
+  &:hover, &:focus {
+    background: $gray2;
+  }
+}
+
+input {
+  &[type="reset"] {
+    &:hover, &:focus {
+      background: $gray2;
+    }
+  }
+  &[type="button"].secondary {
+    &:hover, &:focus {
+      background: $gray2;
+    }
+  }
+  &[type="reset"].secondary {
+    &:hover, &:focus {
+      background: $gray2;
+    }
+  }
+  &[type="submit"].secondary {
+    &:hover, &:focus {
+      background: $gray2;
+    }
+  }
+}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+
+::-webkit-input-placeholder, :-moz-placeholder {
+  color: $black3;
+  font-family: $font-family-placeholder;
+}
+
+::-moz-placeholder {
+  color: $black3;
+  font-family: $font-family-placeholder;
+  opacity: 1;
+  /* Since FF19 lowers the opacity of the placeholder by default */
+}
+
+:-ms-input-placeholder {
+  color: $black3;
+  font-family: $font-family-placeholder;
+}
