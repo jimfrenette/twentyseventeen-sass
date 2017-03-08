@@ -14,3 +14,4 @@ gulp css
 
 ### The Word Press Twenty Seventeen Theme URI
 https://wordpress.org/themes/twentyseventeen/
+
