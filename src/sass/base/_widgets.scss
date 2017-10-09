@@ -1,7 +1,3 @@
-/*--------------------------------------------------------------
-15.0 Widgets
---------------------------------------------------------------*/
-
 #secondary {
   padding: 1em 0 2em;
 }
@@ -34,9 +30,9 @@ h2.widget-title {
     list-style: none;
     margin: 0;
     li {
-    border-bottom: 1px solid $silver3;
-    border-top: 1px solid $silver3;
-    padding: 0.5em 0;
+      border-bottom: 1px solid $silver3;
+      border-top: 1px solid $silver3;
+      padding: 0.5em 0;
     }
   }
   ol li {
@@ -44,19 +40,19 @@ h2.widget-title {
     border-top: 1px solid $silver3;
     padding: 0.5em 0;
   }
-  ul li {
-    + li {
+  &:not(.widget_tag_cloud) ul li + li {
     margin-top: -1px;
-    }
+  }
+  ul li {
     ul {
-    margin: 0 0 -1px;
-    padding: 0;
-    position: relative;
+      margin: 0 0 -1px;
+      padding: 0;
+      position: relative;
     }
     li {
-    border: 0;
-    padding-left: 24px;
-    padding-left: 1.5rem;
+      border: 0;
+      padding-left: 24px;
+      padding-left: 1.5rem;
     }
   }
 }
@@ -113,17 +109,17 @@ h2.widget-title {
   }
   ul li {
     ul {
-    margin: 0 0 0 1.5em;
+      margin: 0 0 0 1.5em;
     }
     li {
-    padding-left: 0;
-    padding-right: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
   ol li {
     list-style-position: inside;
     + li {
-    margin-top: -1px;
+      margin-top: -1px;
     }
   }
 }
@@ -134,17 +130,17 @@ h2.widget-title {
   .widget-title .rsswidget:first-child {
     float: right;
     &:hover {
-    background-color: transparent;
+      background-color: transparent;
     }
     img {
-    display: block;
+      display: block;
     }
   }
   ul li {
     padding: 2.125em 0;
     &:first-child {
-    border-top: none;
-    padding-top: 0;
+      border-top: none;
+      padding-top: 0;
     }
   }
   li .rsswidget {
@@ -212,16 +208,27 @@ h2.widget-title {
     right: 3px;
     top: 3px;
     .icon {
-    height: 24px;
-    top: -2px;
-    width: 24px;
+      height: 24px;
+      top: -2px;
+      width: 24px;
     }
   }
 }
 
 /* Tag cloud widget */
 
-.tagcloud, .widget_tag_cloud, .wp_widget_tag_cloud {
+.tagcloud {
+  ul li {
+    float: left;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0;
+    margin: 4px 4px 0 0;
+  }
+  line-height: 1.5;
+}
+
+.widget_tag_cloud, .wp_widget_tag_cloud {
   line-height: 1.5;
 }
 
@@ -230,13 +237,8 @@ h2.widget-title {
     border: 1px solid $silver3;
     -webkit-box-shadow: none;
     box-shadow: none;
-    display: inline-block;
-    float: left;
-    font-size: 14px !important;
-    /* !important to overwrite inline styles */
-    font-size: 0.875rem !important;
-    margin: 4px 4px 0 0 !important;
-    padding: 4px 10px 5px !important;
+    display: block;
+    padding: 4px 10px 5px;
     position: relative;
     -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
@@ -250,13 +252,8 @@ h2.widget-title {
   border: 1px solid $silver3;
   -webkit-box-shadow: none;
   box-shadow: none;
-  display: inline-block;
-  float: left;
-  font-size: 14px !important;
-  /* !important to overwrite inline styles */
-  font-size: 0.875rem !important;
-  margin: 4px 4px 0 0 !important;
-  padding: 4px 10px 5px !important;
+  display: block;
+  padding: 4px 10px 5px;
   position: relative;
   -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
@@ -268,18 +265,18 @@ h2.widget-title {
 .widget {
   .tagcloud a {
     &:hover, &:focus {
-    border-color: $gray2;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-decoration: none;
+      border-color: $gray2;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-decoration: none;
     }
   }
   &.widget_tag_cloud a {
     &:hover, &:focus {
-    border-color: $gray2;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-decoration: none;
+      border-color: $gray2;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-decoration: none;
     }
   }
 }
