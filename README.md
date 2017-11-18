@@ -12,6 +12,7 @@ npm install
 gulp css
 ````
 
+* Keeping the Sass up to date with the current release version of twentyseventeen per the WordPress, Git [style.css](https://github.com/WordPress/WordPress/commits/master/wp-content/themes/twentyseventeen/style.css)
+
 ### The Word Press Twenty Seventeen Theme URI
 https://wordpress.org/themes/twentyseventeen/
-

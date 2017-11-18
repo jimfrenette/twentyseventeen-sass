@@ -7,7 +7,6 @@
   a {
     img {
       -webkit-backface-visibility: hidden;
-      -webkit-transition: opacity 0.2s;
       transition: opacity 0.2s;
     }
     &:hover img, &:focus img {

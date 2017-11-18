@@ -20,13 +20,11 @@
 }
 
 .gallery-item a {
-  -webkit-box-shadow: none;
   box-shadow: none;
   background: none;
   display: inline-block;
   max-width: 100%;
   &:hover, &:focus {
-    -webkit-box-shadow: none;
     box-shadow: none;
     background: none;
     display: inline-block;
