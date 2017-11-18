@@ -59,6 +59,9 @@ h2.widget-title {
       padding-left: 1.5rem;
     }
   }
+  &:not(.widget_tag_cloud) ul li + li {
+    margin-top: -1px;
+  }
 }
 
 /* Widget lists of links */
@@ -239,12 +242,10 @@ h2.widget-title {
 .widget {
   .tagcloud a, &.widget_tag_cloud a {
     border: 1px solid $silver3;
-    -webkit-box-shadow: none;
     box-shadow: none;
     display: block;
     padding: 4px 10px 5px;
     position: relative;
-    -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
     width: auto;
     word-wrap: break-word;
@@ -254,12 +255,10 @@ h2.widget-title {
 
 .wp_widget_tag_cloud a {
   border: 1px solid $silver3;
-  -webkit-box-shadow: none;
   box-shadow: none;
   display: block;
   padding: 4px 10px 5px;
   position: relative;
-  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
   width: auto;
   word-wrap: break-word;
@@ -270,7 +269,6 @@ h2.widget-title {
   .tagcloud a {
     &:hover, &:focus {
       border-color: $gray2;
-      -webkit-box-shadow: none;
       box-shadow: none;
       text-decoration: none;
     }
@@ -278,7 +276,6 @@ h2.widget-title {
   &.widget_tag_cloud a {
     &:hover, &:focus {
       border-color: $gray2;
-      -webkit-box-shadow: none;
       box-shadow: none;
       text-decoration: none;
     }
@@ -288,7 +285,6 @@ h2.widget-title {
 .wp_widget_tag_cloud a {
   &:hover, &:focus {
     border-color: $gray2;
-    -webkit-box-shadow: none;
     box-shadow: none;
     text-decoration: none;
   }
