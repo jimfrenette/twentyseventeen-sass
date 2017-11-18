@@ -46,11 +46,12 @@
 
 /* Add some space around the visual edit shortcut buttons. */
 
+.twentyseventeen-panel > .customize-partial-edit-shortcut > button {
+  top: 30px;
+  left: 30px;
+}
+
 .twentyseventeen-panel {
-  .customize-partial-edit-shortcut button {
-    top: 30px;
-    left: 30px;
-  }
   .customize-partial-edit-shortcut-hidden:before {
     visibility: visible;
   }
