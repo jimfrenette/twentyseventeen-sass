@@ -26,10 +26,16 @@ img {
 }
 
 /* Make sure embeds and iframes fit their containers. */
-
 embed, iframe, object {
   margin-bottom: 1.5em;
   max-width: 100%;
+}
+
+/* Remove bottom on embeds that wrapped in paragraphs via wpautop. */
+p > {
+  embed:only-child, iframe:only-child, object:only-child {
+   margin-bottom: 0;
+  }
 }
 
 .wp-caption,
@@ -86,7 +92,6 @@ embed, iframe, object {
     }
     .wp-playlist-item {
       border-bottom: 1px dotted $silver2;
-      -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
       transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
       &:hover, &:focus {
         border-bottom-color: rgba(0, 0, 0, 0);
@@ -125,7 +130,6 @@ embed, iframe, object {
     }
     .wp-playlist-item {
       border-bottom: 1px dotted $gray5;
-      -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
       transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
       &:hover, &:focus {
         border-bottom-color: rgba(0, 0, 0, 0);
@@ -169,11 +173,9 @@ embed, iframe, object {
     a {
       padding: 0.3125em 0;
       border-bottom: none;
-      -webkit-box-shadow: none;
       box-shadow: none;
       background: transparent;
       &:focus, &:hover {
-        -webkit-box-shadow: none;
         box-shadow: none;
         background: transparent;
       }
