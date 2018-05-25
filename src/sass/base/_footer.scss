@@ -64,4 +64,10 @@
     height: 0;
     width: 100%;
   }
+  span[role=separator] {
+    padding: 0 0.2em 0 0.4em;
+    &::before {
+      content: '\002f';
+    }
+  }
 }
