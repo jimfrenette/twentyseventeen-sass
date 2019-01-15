@@ -60,6 +60,9 @@ select {
 }
 
 input {
+  &[type="radio"]:focus, &[type="checkbox"]:focus {
+    outline: thin dotted $black3;
+  }
   &[type="radio"], &[type="checkbox"] {
     margin-right: 0.5em;
   }
