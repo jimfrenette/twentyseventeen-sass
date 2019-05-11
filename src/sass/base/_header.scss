@@ -96,6 +96,7 @@ body.home.title-tagline-hidden {
 
 body:not(.title-tagline-hidden) .site-branding-text {
   display: inline-block;
+  max-width: 100%;
   vertical-align: middle;
 }
 
