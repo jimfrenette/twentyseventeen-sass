@@ -136,7 +136,8 @@ input {
 }
 
 button {
-  &:hover, &:focus {
+  &:hover, &:focus,
+  &:hover:not( .mejs-container > button ) {
     background: $gray1;
   }
 }
