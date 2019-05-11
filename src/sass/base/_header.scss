@@ -230,7 +230,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
     width: 100%;
   }
   .has-header-video .custom-header-media {
-    video, iframe {
+    video {
       height: 100%;
       left: 0;
       -o-object-fit: cover;
