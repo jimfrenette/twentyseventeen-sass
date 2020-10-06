@@ -293,9 +293,29 @@ h2.widget-title {
 /* Calendar widget */
 
 .widget_calendar {
-  th, td {
+  .wp-calendar-table {
+    margin-bottom: 0;
+  }
+
+  .wp-calendar-nav {
+    display: table;
+    width: 100%;
+    margin: 0 0 1.5em;
+    padding: 0.4em 0;
+
+    span {
+      display: table-cell;
+    }
+
+    .pad {
+      width: 15%;
+    }
+  }
+
+  th, td, .wp-calendar-nav span {
     text-align: center;
   }
+
   tfoot td {
     border: 0;
   }
