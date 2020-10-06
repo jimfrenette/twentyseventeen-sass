@@ -306,10 +306,10 @@ h2.widget-title {
     span {
       display: table-cell;
     }
+  }
 
-    .pad {
-      width: 15%;
-    }
+  .wp-calendar-nav-prev, .wp-calendar-nav-next {
+    width: 40%;
   }
 
   th, td, .wp-calendar-nav span {
