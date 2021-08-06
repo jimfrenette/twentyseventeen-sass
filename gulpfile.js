@@ -2,15 +2,10 @@
 
 var gulp         = require('gulp'),
     cssnano      = require('gulp-cssnano'),
-    sass         = require('gulp-sass');
+    sass         = require('gulp-sass')(require('sass'));
 
 var supported = [
-    'last 2 versions',
-    'safari >= 8',
-    'ie >= 10',
-    'ff >= 20',
-    'ios 6',
-    'android 4'
+    'last 2 versions'
 ];
 
 gulp.task('css', function(){
